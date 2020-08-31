@@ -1,0 +1,349 @@
+<div class='sheet-2colrow'>
+    <div class="sheet-col-id sheet-col">
+        <div class="sheet-header">Name</div>
+        <input type="text" name="attr_name"  placeholder="Name" title="@{name}"/>
+        <textarea height="80" name="attr_description"  placeholder="Description" title="@{description}"></textarea>
+        <div class="sheet-header">Approaches</div>
+		<table class="sheet-approaches">
+			<tr>
+				<td><button name="roll_bold" type="roll" value="&amp;{template:FAE} {{name=@{name}}} {{approach=bold}} {{roll=[[4DF+@{bold}]]}}"></button></td>
+				<td><label alignment="right">Bold</label></td>
+				<td><input name="attr_bold" title="@{bold}" type="number" /></td>
+
+				<td><input name="attr_subtle" title="@{subtle}" type="number" /></td>
+				<td><label>Subtle</label></td>
+				<td><button name="roll_subtle" type="roll" value="&amp;{template:FAE} {{name=@{name}}} {{approach=subtle}} {{roll=[[4DF+@{subtle}]]}}"></button></td>
+			</tr>
+			<tr>
+				<td><button name="roll_clever" type="roll" value="&amp;{template:FAE} {{name=@{name}}} {{approach=clever}} {{roll=[[4DF+@{clever}]]}}"></button></td>
+				<td><label alignment="right">Clever</label></td>
+				<td><input name="attr_clever" title="@{clever}" type="number" /></td>
+
+				<td><input name="attr_mighty" title="@{mighty}" type="number" /></td>
+				<td><label>Mighty</label></td>
+				<td><button name="roll_mighty" type="roll" value="&amp;{template:FAE} {{name=@{name}}} {{approach=mighty}} {{roll=[[4DF+@{mighty}]]}}"></button></td>
+			</tr>
+			<tr>
+				<td><button name="roll_wise" type="roll" value="&amp;{template:FAE} {{name=@{name}}} {{approach=wise}} {{roll=[[4DF+@{wise}]]}}"></button></td>
+				<td><label alignment="right">Wise</label></td>
+				<td><input name="attr_wise" title="@{wise}" type="number" /></td>
+				
+				<td><input name="attr_swift" title="@{swift}" type="number" /></td>
+				<td><label>Swift</label></td>
+				<td><button name="roll_swift" type="roll" value="&amp;{template:FAE} {{name=@{name}}} {{approach=swift}} {{roll=[[4DF+@{swift}]]}}"></button></td>
+			</tr>
+		</table>
+
+    </div> <!-- .section-id -->
+
+    <div class="sheet-col-refresh sheet-col">
+        <div>
+            <img class="sheet-logo" src="http://www.evilhat.com/home/wp-content/uploads/2012/12/Fate-Accelerated.jpg" alt="Gods and Monsters" />
+        </div>
+        <div class="sheet-break"></div>
+        <div class="sheet-under-logo">
+            <label>Refresh <input type="number" name="attr_refresh"  placeholder="Refresh" title="@{refresh}"/></label>
+            <label>Current <input type="number" name="attr_current_fate_points"  placeholder="Current Fate Points" title="@{current_fate_points}"/></label>
+        </div>
+    </div> <!-- .section-refresh -->
+</div>
+
+<div class="sheet-break"></div>
+
+ <div class="sheet-row">
+        <div class="sheet-header">Aspects</div>
+        <table class="sheet-aspects">
+            <tbody>
+            <tr>
+                <td><input type="text" name="attr_high_concept" placeholder="High Concept Aspect" title="@{high_concept} value="@{attr_high_concept}"/></td>
+                <td><select name="attr_high_concept_ascendant"> 
+                    <option value="-" data-i18n="-"></option>
+                    <option value="Bold" data-i18n="Bold"></option><option value="Subtle" data-i18n="Subtle"></option>
+                    <option value="Clever" data-i18n="Clever"></option><option value="Mighty" data-i18n="Mighty"></option>
+                    <option value="Wise" data-i18n="Wise"></option><option value="Swift" data-i18n="Swift"></option>
+                </select> </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="attr_trouble" placeholder="Trouble Aspect" title="@{trouble} value="Trouble"/></td>
+                <td><select name="attr_trouble_ascendant"> 
+                    <option value="-" data-i18n="-"></option>
+                    <option value="Bold" data-i18n="Bold"></option><option value="Subtle" data-i18n="Subtle"></option>
+                    <option value="Clever" data-i18n="Clever"></option><option value="Mighty" data-i18n="Mighty"></option>
+                    <option value="Wise" data-i18n="Wise"></option><option value="Swift" data-i18n="Swift"></option>
+                </select> </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="attr_aspect_three" placeholder="Third Aspect" title="@{third} value="Third"/></td>
+                <td><select name="attr_aspect3_ascendant"> 
+                    <option value="-" data-i18n="-"></option>
+                    <option value="Bold" data-i18n="Bold"></option><option value="Subtle" data-i18n="Subtle"></option>
+                    <option value="Clever" data-i18n="Clever"></option><option value="Mighty" data-i18n="Mighty"></option>
+                    <option value="Wise" data-i18n="Wise"></option><option value="Swift" data-i18n="Swift"></option>
+                </select> </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="attr_aspect_four" placeholder="Fourth Aspect" title="@{fourth} value="Fourth"/></td>
+                <td><select name="attr_aspect4_ascendant"> 
+                    <option value="-" data-i18n="-"></option>
+                    <option value="Bold" data-i18n="Bold"></option><option value="Subtle" data-i18n="Subtle"></option>
+                    <option value="Clever" data-i18n="Clever"></option><option value="Mighty" data-i18n="Mighty"></option>
+                    <option value="Wise" data-i18n="Wise"></option><option value="Swift" data-i18n="Swift"></option>
+                </select> </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="attr_aspect_five" placeholder="Fifth Aspect" title="@{fifth} value="Fifth"/></td>
+                <td><select name="attr_aspect5_ascendant"> 
+                    <option value="-" data-i18n="-"></option>
+                    <option value="Bold" data-i18n="Bold"></option><option value="Subtle" data-i18n="Subtle"></option>
+                    <option value="Clever" data-i18n="Clever"></option><option value="Mighty" data-i18n="Mighty"></option>
+                    <option value="Wise" data-i18n="Wise"></option><option value="Swift" data-i18n="Swift"></option>
+                </select> </td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div> <!-- .section-aspects -->
+
+</div>
+
+<div class='sheet-2colrow'>
+    <div class="sheet-col-L sheet-col">
+
+    <div class="sheet-row">
+        <div class="sheet-col-stunts sheet-col " style="width:100%">
+            <div class="sheet-header">Stunts</div>
+            <textarea name="attr_stunts"  title="@{stunts}"></textarea>
+        </div> <!-- .section-stunts -->
+    </div>
+
+    <div class="sheet-row">
+        <div class="sheet-col-extras sheet-col " style="width:100%">
+            <div class="sheet-header">Extras</div>
+            <textarea name="attr_Extras"></textarea>
+        </div> <!-- .section-extra -->
+    </div>
+    
+    
+        <div class="sheet-header">Stress</div>
+        <table class="sheet-stress">
+            <tbody>
+            <tr>
+                <th><h4>1</h4></th>
+                <th><h4>2</h4></th>
+                <th><h4>3</h4></th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="sheet-checkbox-label-div">
+                        <input class="sheet-stress-check" type="checkbox" name="attr_stress1" value="1" title="@{stress1}" />
+                        <label></label>
+                    </div>
+                </td>
+                <td>
+                    <div class="sheet-checkbox-label-div">
+                        <input class="sheet-stress-check" type="checkbox" name="attr_stress2" value="2" title="@{stress2}" />
+                        <label></label>
+                    </div>
+                </td>
+                <td>
+                    <div class="sheet-checkbox-label-div">
+                        <input class="sheet-stress-check" type="checkbox" name="attr_stress3" value="3" title="@{stress3}" />
+                        <label></label>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="sheet-header">Consequences</div>
+        <div class="sheet-col-consequences">
+        <fieldset class="repeating_consequences">
+            <input type="text" name="attr_consequence" />
+            <select name="attr_consequences_type">
+				<option value="2">Mild(-2)</option>
+				<option value="4">Moderate(-4)</option>
+				<option value="6">Severe(-6)</option>
+			</select>
+        </fieldset>
+        </div>
+    </div> <!-- .section-consequences -->
+
+    <div class="sheet-col-R sheet-col">
+    <div class="sheet-row">
+        <div class="sheet-col-boon sheet-col " style="width:100%">
+            <div class="sheet-header">Mantle</div>
+            <select name="attr_milestone_tier" title="@{milestone_tier}" />
+                <option value="0">Milestone Tier 0</option> 
+                <option value="1">Milestone Tier 1</option> 
+                <option value="2">Milestone Tier 2</option> 
+                <option value="3">Milestone Tier 3</option> 
+            </select>
+            <div class="sheet-header">Boons</div>
+            <textarea name="attr_boon"  title="@{boon}"></textarea>
+        </div> <!-- .section-boon -->
+    </div>
+    
+   
+    <div class="sheet-col-geas sheet-col " style="width:100%">
+        <div class="sheet-header">Geas</div>
+        <textarea name="attr_geas"  title="@{geas}"></textarea>
+    </div> <!-- .section-geas -->
+
+    <div class="sheet-header">Stations</div>
+    <div class="sheet-col-stations">
+        <fieldset class="repeating_stations">       
+            <input type="text" name="attr_station" />
+            <select name="attr_station_point" title="@{station}" />
+                <option value="0">0</option> 
+                <option value="1">1</option> 
+            </select>
+        </fieldset>
+    </div>
+    </div>
+</div>
+
+<div class="sheet-break"></div>
+
+<div class="sheet-row">
+    <div class="sheet-col-intention sheet-col ">
+        <div class="sheet-header">Intention</div>
+
+        <table> <tbody>
+            <tr>
+                <td><label alignment="right">Bold</label></td>
+                <td>
+                    <div class="sheet-intention-check">
+                        <label for="bold3.1"> </label>
+                        <input type="checkbox" id="bold3.1" name="attr_intention_bold_subtle" value="3.1">
+                        <label for="bold3">| 3</label>
+                        <input type="checkbox" id="bold3" name="attr_intention_bold_subtle" value="3">
+                        <label for="bold2.2">|</label>
+                        <input type="checkbox" id="bold2.2" name="attr_intention_bold_subtle" value="2.2">
+                        <label for="bold2.1">|</label>
+                        <input type="checkbox" id="bold2.1" name="attr_intention_bold_subtle" value="2.1">
+                        <label for="bold2">| 2</label>
+                        <input type="checkbox" id="bold2" name="attr_intention_bold_subtle" value="2">
+                        <label for="bold1.1">|</label>
+                        <input type="checkbox" id="bold1.1" name="attr_intention_bold_subtle" value="1.1">
+                        <label for="bold1">| 1</label>
+                        <input type="checkbox" id="bold1" name="attr_intention_bold_subtle" value="1">
+                        <label for="bold0">| 0</label>
+                        <input type="checkbox" id="bold0" name="attr_intention_bold_subtle" value="0">
+
+                        <label for="subtle1">| 1</label>
+                        <input type="checkbox" id="subtle1" name="attr_intention_bold_subtle" value="-1">
+                        <label for="subtle1.1">|</label>
+                        <input type="checkbox" id="subtle1.1" name="attr_intention_bold_subtle" value="-1.1">
+                        <label for="subtle2">| 2</label>
+                        <input type="checkbox" id="subtle2" name="attr_intention_bold_subtle" value="-2">
+                        <label for="subtle2.1">|</label>
+                        <input type="checkbox" id="subtle2.1" name="attr_intention_bold_subtle" value="-2.1">
+                        <label for="subtle2.2">|</label>
+                        <input type="checkbox" id="subtle2.2" name="attr_intention_bold_subtle" value="-2.2">
+                        <label for="subtle3">| 3</label>
+                        <input type="checkbox" id="subtle3" name="attr_intention_bold_subtle" value="-3">
+                        <label for="subtle3.1">|</label>
+                        <input type="checkbox" id="subtle3.1" name="attr_intention_bold_subtle" value="-3.1">
+                    </div>
+                </td>
+                <td><label>Subtle</label></td>
+            </tr>
+            <tr>
+                <td><label alignment="right">Clever</label></td>
+                <td>
+                    <div class="sheet-intention-check">
+                        <label for="clever3.1"> </label>
+                        <input type="checkbox" id="clever3.1" name="attr_intention_clever_mighty" value="3.1">
+                        <label for="clever3">| 3</label>
+                        <input type="checkbox" id="clever3" name="attr_intention_clever_mighty" value="3">
+                        <label for="clever2.2">|</label>
+                        <input type="checkbox" id="clever2.2" name="attr_intention_clever_mighty" value="2.2">
+                        <label for="clever2.1">|</label>
+                        <input type="checkbox" id="clever2.1" name="attr_intention_clever_mighty" value="2.1">
+                        <label for="clever2">| 2</label>
+                        <input type="checkbox" id="clever2" name="attr_intention_clever_mighty" value="2">
+                        <label for="clever1.1">|</label>
+                        <input type="checkbox" id="clever1.1" name="attr_intention_clever_mighty" value="1.1">
+                        <label for="clever1">| 1</label>
+                        <input type="checkbox" id="clever1" name="attr_intention_clever_mighty" value="1">
+                        <label for="clever0">| 0</label>
+                        <input type="checkbox" id="clever0" name="attr_intention_clever_mighty" value="0">
+
+                        <label for="mighty1">| 1</label>
+                        <input type="checkbox" id="mighty1" name="attr_intention_clever_mighty" value="-1">
+                        <label for="mighty1.1">|</label>
+                        <input type="checkbox" id="mighty1.1" name="attr_intention_clever_mighty" value="-1.1">
+                        <label for="mighty2">| 2</label>
+                        <input type="checkbox" id="mighty2" name="attr_intention_clever_mighty" value="-2">
+                        <label for="mighty2.1">|</label>
+                        <input type="checkbox" id="mighty2.1" name="attr_intention_clever_mighty" value="-2.1">
+                        <label for="mighty2.2">|</label>
+                        <input type="checkbox" id="mighty2.2" name="attr_intention_clever_mighty" value="-2.2">
+                        <label for="mighty3">| 3</label>
+                        <input type="checkbox" id="mighty3" name="attr_intention_clever_mighty" value="-3">
+                        <label for="mighty3.1">|</label>
+                        <input type="checkbox" id="mighty3.1" name="attr_intention_clever_mighty" value="-3.1">
+                    </div>
+                </td>
+                <td><label>Mighty</label></td>
+            </tr>
+            <tr>
+                <td><label alignment="right">Wise</label></td>
+                <td>
+                    <div class="sheet-intention-check">
+                        <label for="wise3.1"> </label>
+                        <input type="checkbox" id="wise3.1" name="attr_intention_wise_swift" value="3.1">
+                        <label for="wise3">| 3</label>
+                        <input type="checkbox" id="wise3" name="attr_intention_wise_swift" value="3">
+                        <label for="wise2.2">|</label>
+                        <input type="checkbox" id="wise2.2" name="attr_intention_wise_swift" value="2.2">
+                        <label for="wise2.1">|</label>
+                        <input type="checkbox" id="wise2.1" name="attr_intention_wise_swift" value="2.1">
+                        <label for="wise2">| 2</label>
+                        <input type="checkbox" id="wise2" name="attr_intention_wise_swift" value="2">
+                        <label for="wise1.1">|</label>
+                        <input type="checkbox" id="wise1.1" name="attr_intention_wise_swift" value="1.1">
+                        <label for="wise1">| 1</label>
+                        <input type="checkbox" id="wise1" name="attr_intention_wise_swift" value="1">
+                        <label for="wise0">| 0</label>
+                        <input type="checkbox" id="wise0" name="attr_intention_wise_swift" value="0">
+
+                        <label for="swift1">| 1</label>
+                        <input type="checkbox" id="swift1" name="attr_intention_wise_swift" value="-1">
+                        <label for="swift1.1">|</label>
+                        <input type="checkbox" id="swift1.1" name="attr_intention_wise_swift" value="-1.1">
+                        <label for="swift2">| 2</label>
+                        <input type="checkbox" id="swift2" name="attr_intention_wise_swift" value="-2">
+                        <label for="swift2.1">|</label>
+                        <input type="checkbox" id="swift2.1" name="attr_intention_wise_swift" value="-2.1">
+                        <label for="swift2.2">|</label>
+                        <input type="checkbox" id="swift2.2" name="attr_intention_wise_swift" value="-2.2">
+                        <label for="swift3">| 3</label>
+                        <input type="checkbox" id="swift3" name="attr_intention_wise_swift" value="-3">
+                        <label for="swift3.1">|</label>
+                        <input type="checkbox" id="swift3.1" name="attr_intention_wise_swift" value="-3.1">
+                    </div>
+                </td>
+                <td><label>Swift</label></td>
+            </tr>
+        </tbody> </table>
+    </div> <!-- .section-intention -->
+</div>
+
+<rolltemplate class="sheet-rolltemplate-FAE">
+    <table>
+    	<tr><th>{{name}}</th></tr>
+		{{#approach}}
+			<tr><th>{{approach}}</th></tr>
+		{{/approach}}
+	
+		<tr class="arrow-container"><td><div class="arrow-right"></div></td></tr>		
+
+		{{#roll}}
+			<tr><td><span class="tcat">Roll: </span>{{roll}}</td></tr>
+		{{/roll}}
+		{{#effect}}
+			<tr><td><span class="tcat">Effect: </span>{{effect}}</td></tr>
+		{{/effect}}
+    </table>
+</rolltemplate>
